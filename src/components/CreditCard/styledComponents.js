@@ -13,10 +13,11 @@ export const CardBgContainer = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   @media screen and (max-width: 767px) {
     width: 100%;
+    height: 60vh;
   }
 `
 
@@ -39,10 +40,21 @@ export const InputBgContainer = styled.div`
   justify-content: center;
   align-items: center;
   min-width: 50%;
-  box-shadow: 10px 10px #d3d9e0;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    height: 60vh;
+  }
 `
 
-export const InputContainer = styled.div``
+export const InputContainer = styled.div`
+  height: 50%;
+  width: 90%;
+  box-shadow: 10px 10px 10px 10px #c3cad9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
 
 export const Heading = styled.h1`
   color: #fff;
